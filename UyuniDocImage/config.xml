@@ -23,10 +23,13 @@
             <machine memory="2048" guestOS="suse" HWversion="4"/>
         </type>
     </preferences>
-    <repository type="rpm-md" imageinclude="true" priority="80">
+    <repository type="rpm-md" imageinclude="true" priority="80" alias="openSUSE_Leap_15.2">
       <source path="http://download.opensuse.org/distribution/leap/15.2/repo/oss/"/>
     </repository>
-    <repository type="rpm-md" imageinclude="true" priority="90">
+    <repository type="rpm-md" imageinclude="true" priority="80" alias="openSUSE_Leap_15.2_Update">
+      <source path="http://download.opensuse.org/update/leap/15.2/oss/"/>
+    </repository>
+    <repository type="rpm-md" imageinclude="true" priority="90" alias="devel_languages_perl">
       <source path="https://download.opensuse.org/repositories/devel:/languages:/perl/openSUSE_Leap_15.2/"/>
     </repository>
 
@@ -69,7 +72,7 @@
         <package name="openssh"/>
         <package name="rsync"/>
 
-        <package name="kernel-default-base"/>
+        <package name="kernel-default"/>
 <!--        <package name="kernel-firmware"/> -->
 
         <package name="plymouth"/>
@@ -119,6 +122,8 @@
         <package name="dejavu-fonts"/>
         <package name="ghostscript-fonts-std"/>
         <package name="ghostscript-fonts-other"/>
+        <package name="patterns-fonts-fonts"/>
+        <package name="adobe-sourcecodepro-fonts"/>
 
         <!-- vmware -->
         <package name="open-vm-tools"/>
@@ -147,6 +152,7 @@
         <package name="evince"/>
         <package name="evince-plugin-pdfdocument"/>
 
+        <package name="gnome-terminal"/>
 
     </packages>
     <packages type="bootstrap">
