@@ -20,7 +20,7 @@
         <rpm-excludedocs>false</rpm-excludedocs>
         
         <type image="vmx" filesystem="ext4" bootloader="grub2" firmware="uefi" format="vmdk">
-            <size unit="G" additive="true">10</size>
+            <size unit="G" additive="true">100</size>
             <machine memory="2048" guestOS="suse" HWversion="4"/>
         </type>
     </preferences>
