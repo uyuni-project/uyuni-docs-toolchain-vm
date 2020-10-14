@@ -6,6 +6,10 @@
         <contact>noemail@example.com</contact>
         <specification>SUSE Linux Enterprise 15 SP2 Graphical Image</specification>
     </description>
+    <profiles>
+        <profile name="vmdk" description="VMware disk image"/>
+        <profile name="qcow2" description="KVM disk image"/>
+    </profiles>
     <preferences>
         <version>1.0.0</version>
         <packagemanager>zypper</packagemanager>
@@ -18,10 +22,16 @@
         <hwclock>utc</hwclock>
 
         <rpm-excludedocs>false</rpm-excludedocs>
-        
+    </preferences>
+    <preferences profiles="vmdk">
         <type image="vmx" filesystem="ext4" bootloader="grub2" firmware="uefi" format="vmdk">
             <size unit="G" additive="true">100</size>
             <machine memory="2048" guestOS="suse" HWversion="4"/>
+        </type>
+    </preferences>
+    <preferences profiles="qcow2">
+        <type image="vmx" filesystem="ext4" bootloader="grub2" firmware="uefi" format="qcow2">
+            <size unit="G" additive="true">100</size>
         </type>
     </preferences>
     <repository type="rpm-md" imageinclude="true" priority="80" alias="openSUSE_Leap_15.2">
@@ -154,6 +164,7 @@
         <package name="evince-plugin-pdfdocument"/>
 
         <package name="gnome-terminal"/>
+        <package name="eog"/>
 
     </packages>
     <packages type="bootstrap">

@@ -91,11 +91,6 @@ EOF
 chkconfig sshd on
 
 #======================================
-# Remove doc files
-#--------------------------------------
-baseStripDocs
-
-#======================================
 # Sysconfig Update
 #--------------------------------------
 echo '** Update sysconfig entries...'
@@ -152,6 +147,8 @@ gem install rouge coderay rb-pygments concurrent-ruby asciidoctor-diagram
 gem install prawn-gmagick
 git clone https://github.com/uyuni-project/uyuni-docs.git
 "
+
+dconf update
 
 ############
 baseCleanMount
