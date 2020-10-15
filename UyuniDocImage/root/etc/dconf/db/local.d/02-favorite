@@ -1,0 +1,5 @@
+# dconf path
+[org/gnome/shell]
+
+# dconf key names and their corresponding values
+favorite-apps=['org.gnome.Terminal.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop']
