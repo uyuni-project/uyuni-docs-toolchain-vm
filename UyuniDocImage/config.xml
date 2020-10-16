@@ -26,7 +26,9 @@
     <preferences profiles="vmdk">
         <type image="vmx" filesystem="ext4" bootloader="grub2" firmware="uefi" format="vmdk">
             <size unit="G" additive="true">100</size>
-            <machine memory="2048" guestOS="suse" HWversion="4"/>
+            <machine memory="2048" guestOS="suse" HWversion="4">
+            <vmnic driver="e1000" interface="0" mode="bridged"/>
+            </machine>
         </type>
     </preferences>
     <preferences profiles="qcow2">
