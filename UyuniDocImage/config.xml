@@ -168,6 +168,9 @@
         <package name="gnome-terminal"/>
         <package name="eog"/>
 
+        <package name="sudo"/>
+        <package name="gitg"/>
+
     </packages>
     <packages type="bootstrap">
         <package name="udev"/>
