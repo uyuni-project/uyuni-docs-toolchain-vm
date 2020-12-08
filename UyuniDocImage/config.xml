@@ -11,7 +11,7 @@
         <profile name="qcow2" description="KVM disk image"/>
     </profiles>
     <preferences>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
         <packagemanager>zypper</packagemanager>
         <bootsplash-theme>bgrt</bootsplash-theme>
         <bootloader-theme>openSUSE</bootloader-theme>
@@ -42,8 +42,8 @@
     <repository type="rpm-md" imageinclude="true" priority="80" alias="openSUSE_Leap_15.2_Update">
       <source path="http://download.opensuse.org/update/leap/15.2/oss/"/>
     </repository>
-    <repository type="rpm-md" imageinclude="true" priority="90" alias="devel_languages_perl">
-      <source path="https://download.opensuse.org/repositories/devel:/languages:/perl/openSUSE_Leap_15.2/"/>
+    <repository type="rpm-md" imageinclude="true" priority="70" alias="pagarcia_po4a">
+      <source path="https://download.opensuse.org/repositories/home:/pagarcia:/po4a/openSUSE_Leap_15.2/"/>
     </repository>
 
     <users>
@@ -159,7 +159,7 @@
         <package name="GraphicsMagick"/>
         <package name="GraphicsMagick-devel"/>
 
-        <package name="po4a>0.58"/>
+        <package name="po4a>=0.62"/>
         <package name="perl-Unicode-LineBreak"/>
 
         <package name="evince"/>
