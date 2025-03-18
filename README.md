@@ -1,4 +1,8 @@
-# uyuni-translation-image
+# Archived (Deprecated)
+
+This tool has been archived in favor of the new [Uyuni Docs Helper](https://github.com/uyuni-project/uyuni-docs-helper) Container. 
+
+## uyuni-translation-image
 Uyuni/SUMA toolchain built using KIWI Next Gen. Creates various image formats containing Antora, Asciidoctor, Asciidoctor-pdf and doc repo.
 
 Build it on Leap 15.2 with this command:
